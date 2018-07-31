@@ -15,13 +15,32 @@ public class StrStr {
             return 0;
         }
         if( haystack == null || haystack.equals("")) {
-            return 0;
+            return -1;
+        }
+
+        if(haystack.length() == needle.length()) {
+            return haystack.equals(needle)? 0: -1;
         }
 
         if(needle.length() > haystack.length()) {
-            return 0;
+            return -1;
         }
 
-        return 0;
+        // 正式流程
+        char[] haystackChars = haystack.toCharArray();
+        char[] needleChars = needle.toCharArray();
+        for(int i = 0;i < haystackChars.length - needleChars.length;i++) {
+            boolean match = true;
+            for(int j = 0; j < needleChars.length ;j ++) {
+                if(haystackChars[i+j] != needleChars[j]) {
+                    match = false;
+                    break;
+                }
+            }
+            if(match) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
