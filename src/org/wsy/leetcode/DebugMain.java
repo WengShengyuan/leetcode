@@ -6,14 +6,19 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugIsPalindrome();
+        debugHasCycle();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugIsPalindrome() {
-        org.wsy.leetcode.list.IsPalindrome isPalindrome = new org.wsy.leetcode.list.IsPalindrome();
-        System.out.println(isPalindrome.isPalindrome(NodeFactory.build(new int[]{1,0,1})));
+    static void debugHasCycle() {
+        org.wsy.leetcode.list.HasCycle hasCycle = new org.wsy.leetcode.list.HasCycle();
+        System.out.println(hasCycle.hasCycle(NodeFactory.build(new int[]{1, 2, 3, 2, 1})));
     }
+
+//    static void debugIsPalindrome() {
+//        org.wsy.leetcode.list.IsPalindrome isPalindrome = new org.wsy.leetcode.list.IsPalindrome();
+//        System.out.println(isPalindrome.isPalindrome(NodeFactory.build(new int[]{1,0,1})));
+//    }
 
 //    static void debugMergeTwoLists() {
 //        org.wsy.leetcode.list.MergeTwoLists mergeTwoLists = new org.wsy.leetcode.list.MergeTwoLists();
