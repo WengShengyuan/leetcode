@@ -6,16 +6,19 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-
-        debugRemoveNthFromEnd();
-
+        debugReverseList();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugRemoveNthFromEnd() {
-        org.wsy.leetcode.list.RemoveNthFromEnd removeNthFromEnd = new org.wsy.leetcode.list.RemoveNthFromEnd();
-        System.out.println(removeNthFromEnd.removeNthFromEnd(NodeFactory.build(new int[]{1,2,3,4,5}),2));
+    static void debugReverseList() {
+        org.wsy.leetcode.list.ReverseList reverseList = new org.wsy.leetcode.list.ReverseList();
+        System.out.println(reverseList.reverseList(NodeFactory.build(new int[]{1,2,3,4,5})));
     }
+
+//    static void debugRemoveNthFromEnd() {
+//        org.wsy.leetcode.list.RemoveNthFromEnd removeNthFromEnd = new org.wsy.leetcode.list.RemoveNthFromEnd();
+//        System.out.println(removeNthFromEnd.removeNthFromEnd(NodeFactory.build(new int[]{1,2,3,4,5}),2));
+//    }
 
 //    static void debugDeleteNode() {
 //        org.wsy.leetcode.list.DeleteNode deleteNode = new org.wsy.leetcode.list.DeleteNode();
