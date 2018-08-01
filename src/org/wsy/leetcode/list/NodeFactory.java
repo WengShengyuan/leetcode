@@ -17,6 +17,7 @@ public class NodeFactory {
                     current = current.next;
                 }
             }
+            System.out.println("build: "+head);
             return head;
         }
     }
