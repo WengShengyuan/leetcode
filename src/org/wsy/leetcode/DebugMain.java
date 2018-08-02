@@ -7,15 +7,21 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugIsValidBST();
+        debugIsSymmetric();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugIsValidBST() {
-        org.wsy.leetcode.tree.IsValidBST isValidBST = new org.wsy.leetcode.tree.IsValidBST();
-        System.out.println(isValidBST.isValidBST(new TreeNode(2,new TreeNode(1), new TreeNode(3))));
-        System.out.println(isValidBST.isValidBST(new TreeNode(5,new TreeNode(1), new TreeNode(4,new TreeNode(3),new TreeNode(6)))));
+    static void debugIsSymmetric() {
+        org.wsy.leetcode.tree.IsSymmetric isSymmetric = new org.wsy.leetcode.tree.IsSymmetric();
+        System.out.println(isSymmetric.isSymmetric(new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)).trimRight(),
+                new TreeNode(2, new TreeNode(4), new TreeNode(3)).trimLeft())));
     }
+
+//    static void debugIsValidBST() {
+//        org.wsy.leetcode.tree.IsValidBST isValidBST = new org.wsy.leetcode.tree.IsValidBST();
+//        System.out.println(isValidBST.isValidBST(new TreeNode(2,new TreeNode(1), new TreeNode(3))));
+//        System.out.println(isValidBST.isValidBST(new TreeNode(5,new TreeNode(1), new TreeNode(4,new TreeNode(3),new TreeNode(6)))));
+//    }
 
 //    static void debugMaxDepth() {
 //        org.wsy.leetcode.tree.MaxDepth maxDepth = new org.wsy.leetcode.tree.MaxDepth();

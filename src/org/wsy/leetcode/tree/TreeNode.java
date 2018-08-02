@@ -16,6 +16,17 @@ public class TreeNode {
         this.right = right;
     }
 
+    public TreeNode trimLeft() {
+        left = null;
+        return this;
+    }
+
+    public TreeNode trimRight() {
+        right = null;
+        return this;
+    }
+
+
 
     @Override
     public String toString() {
