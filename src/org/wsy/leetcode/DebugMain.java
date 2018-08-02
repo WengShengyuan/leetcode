@@ -7,15 +7,22 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugIsSymmetric();
+        debugLevelOrder();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugIsSymmetric() {
-        org.wsy.leetcode.tree.IsSymmetric isSymmetric = new org.wsy.leetcode.tree.IsSymmetric();
-        System.out.println(isSymmetric.isSymmetric(new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)).trimRight(),
-                new TreeNode(2, new TreeNode(4), new TreeNode(3)).trimLeft())));
+    static void debugLevelOrder() {
+        org.wsy.leetcode.tree.LevelOrder levelOrder = new org.wsy.leetcode.tree.LevelOrder();
+        System.out.println(levelOrder.levelOrder(new TreeNode(3,
+                new TreeNode(9),new TreeNode(20,
+                new TreeNode(15), new TreeNode(7)))));
     }
+
+//    static void debugIsSymmetric() {
+//        org.wsy.leetcode.tree.IsSymmetric isSymmetric = new org.wsy.leetcode.tree.IsSymmetric();
+//        System.out.println(isSymmetric.isSymmetric(new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)).trimRight(),
+//                new TreeNode(2, new TreeNode(4), new TreeNode(3)).trimLeft())));
+//    }
 
 //    static void debugIsValidBST() {
 //        org.wsy.leetcode.tree.IsValidBST isValidBST = new org.wsy.leetcode.tree.IsValidBST();
