@@ -1,19 +1,31 @@
 package org.wsy.leetcode;
 
 import org.wsy.leetcode.list.ListNode;
+import org.wsy.leetcode.tree.TreeNode;
 import org.wsy.leetcode.list.NodeFactory;
 
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugHasCycle();
+        debugIsValidBST();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugHasCycle() {
-        org.wsy.leetcode.list.HasCycle hasCycle = new org.wsy.leetcode.list.HasCycle();
-        System.out.println(hasCycle.hasCycle(NodeFactory.build(new int[]{1, 2, 3, 2, 1})));
+    static void debugIsValidBST() {
+        org.wsy.leetcode.tree.IsValidBST isValidBST = new org.wsy.leetcode.tree.IsValidBST();
+        System.out.println(isValidBST.isValidBST(new TreeNode(2,new TreeNode(1), new TreeNode(3))));
+        System.out.println(isValidBST.isValidBST(new TreeNode(5,new TreeNode(1), new TreeNode(4,new TreeNode(3),new TreeNode(6)))));
     }
+
+//    static void debugMaxDepth() {
+//        org.wsy.leetcode.tree.MaxDepth maxDepth = new org.wsy.leetcode.tree.MaxDepth();
+//        System.out.println(maxDepth.maxDepth(new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))));
+//    }
+
+//    static void debugHasCycle() {
+//        org.wsy.leetcode.list.HasCycle hasCycle = new org.wsy.leetcode.list.HasCycle();
+//        System.out.println(hasCycle.hasCycle(NodeFactory.build(new int[]{1, 2, 3, 2, 1})));
+//    }
 
 //    static void debugIsPalindrome() {
 //        org.wsy.leetcode.list.IsPalindrome isPalindrome = new org.wsy.leetcode.list.IsPalindrome();
