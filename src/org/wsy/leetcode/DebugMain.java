@@ -7,16 +7,21 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugLevelOrder();
+        debugSortedArrayToBST();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugLevelOrder() {
-        org.wsy.leetcode.tree.LevelOrder levelOrder = new org.wsy.leetcode.tree.LevelOrder();
-        System.out.println(levelOrder.levelOrder(new TreeNode(3,
-                new TreeNode(9),new TreeNode(20,
-                new TreeNode(15), new TreeNode(7)))));
+    static void debugSortedArrayToBST() {
+        org.wsy.leetcode.tree.SortedArrayToBST sortedArrayToBST = new org.wsy.leetcode.tree.SortedArrayToBST();
+        System.out.println(sortedArrayToBST.sortedArrayToBST(new int[] {-10,-3,0,5,9}));
     }
+
+//    static void debugLevelOrder() {
+//        org.wsy.leetcode.tree.LevelOrder levelOrder = new org.wsy.leetcode.tree.LevelOrder();
+//        System.out.println(levelOrder.levelOrder(new TreeNode(3,
+//                new TreeNode(9),new TreeNode(20,
+//                new TreeNode(15), new TreeNode(7)))));
+//    }
 
 //    static void debugIsSymmetric() {
 //        org.wsy.leetcode.tree.IsSymmetric isSymmetric = new org.wsy.leetcode.tree.IsSymmetric();
