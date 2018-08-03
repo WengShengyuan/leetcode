@@ -1,5 +1,6 @@
 package org.wsy.leetcode;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.wsy.leetcode.list.ListNode;
 import org.wsy.leetcode.tree.TreeNode;
 import org.wsy.leetcode.list.NodeFactory;
@@ -7,14 +8,24 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugMerge();
+        debugClimbStairs();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugMerge() {
-        org.wsy.leetcode.sort.Merge merge = new org.wsy.leetcode.sort.Merge();
-        merge.merge(new int[]{1, 2, 3, 0, 0, 0}, 6, new int[]{2, 5, 6}, 3);
+    static void debugClimbStairs() {
+        org.wsy.leetcode.dp.ClimbStairs climbStairs = new org.wsy.leetcode.dp.ClimbStairs();
+        System.out.println(climbStairs.climbStairs(5));
     }
+
+//    static void debugFirstBadVersion() {
+//        org.wsy.leetcode.sort.FirstBadVersion firstBadVersion = new org.wsy.leetcode.sort.FirstBadVersion();
+//        System.out.println(firstBadVersion.firstBadVersion(3));
+//    }
+
+//    static void debugMerge() {
+//        org.wsy.leetcode.sort.Merge merge = new org.wsy.leetcode.sort.Merge();
+//        merge.merge(new int[]{1, 2, 3, 0, 0, 0}, 6, new int[]{2, 5, 6}, 3);
+//    }
 
 //    static void debugSortedArrayToBST() {
 //        org.wsy.leetcode.tree.SortedArrayToBST sortedArrayToBST = new org.wsy.leetcode.tree.SortedArrayToBST();
