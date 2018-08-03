@@ -7,14 +7,19 @@ import org.wsy.leetcode.list.NodeFactory;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugSortedArrayToBST();
+        debugMerge();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugSortedArrayToBST() {
-        org.wsy.leetcode.tree.SortedArrayToBST sortedArrayToBST = new org.wsy.leetcode.tree.SortedArrayToBST();
-        System.out.println(sortedArrayToBST.sortedArrayToBST(new int[] {-10,-3,0,5,9}));
+    static void debugMerge() {
+        org.wsy.leetcode.sort.Merge merge = new org.wsy.leetcode.sort.Merge();
+        merge.merge(new int[]{1, 2, 3, 0, 0, 0}, 6, new int[]{2, 5, 6}, 3);
     }
+
+//    static void debugSortedArrayToBST() {
+//        org.wsy.leetcode.tree.SortedArrayToBST sortedArrayToBST = new org.wsy.leetcode.tree.SortedArrayToBST();
+//        System.out.println(sortedArrayToBST.sortedArrayToBST(new int[] {-10,-3,0,5,9}));
+//    }
 
 //    static void debugLevelOrder() {
 //        org.wsy.leetcode.tree.LevelOrder levelOrder = new org.wsy.leetcode.tree.LevelOrder();
