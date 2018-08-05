@@ -1,21 +1,21 @@
 package org.wsy.leetcode;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-import org.wsy.leetcode.list.ListNode;
-import org.wsy.leetcode.tree.TreeNode;
-import org.wsy.leetcode.list.NodeFactory;
-
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugClimbStairs();
+        debugMaxSubArray();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugClimbStairs() {
-        org.wsy.leetcode.dp.ClimbStairs climbStairs = new org.wsy.leetcode.dp.ClimbStairs();
-        System.out.println(climbStairs.climbStairs(5));
+    static void debugMaxSubArray() {
+        org.wsy.leetcode.dp.MaxSubArray maxSubArray = new org.wsy.leetcode.dp.MaxSubArray();
+        System.out.println(maxSubArray.maxSubArray(new int[] {-2,1,-3,4,-1,2,1,-5,4}));
     }
+
+//    static void debugClimbStairs() {
+//        org.wsy.leetcode.dp.ClimbStairs climbStairs = new org.wsy.leetcode.dp.ClimbStairs();
+//        System.out.println(climbStairs.climbStairs(5));
+//    }
 
 //    static void debugFirstBadVersion() {
 //        org.wsy.leetcode.sort.FirstBadVersion firstBadVersion = new org.wsy.leetcode.sort.FirstBadVersion();
