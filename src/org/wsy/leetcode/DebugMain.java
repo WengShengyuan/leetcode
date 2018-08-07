@@ -3,14 +3,19 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugMaxSubArray();
+        debugRob();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugMaxSubArray() {
-        org.wsy.leetcode.dp.MaxSubArray maxSubArray = new org.wsy.leetcode.dp.MaxSubArray();
-        System.out.println(maxSubArray.maxSubArray(new int[] {-2,1,-3,4,-1,2,1,-5,4}));
+    static void debugRob() {
+        org.wsy.leetcode.dp.Rob rob = new org.wsy.leetcode.dp.Rob();
+        System.out.println(rob.rob(new int[] {1,2,3,1}));
     }
+
+//    static void debugMaxSubArray() {
+//        org.wsy.leetcode.dp.MaxSubArray maxSubArray = new org.wsy.leetcode.dp.MaxSubArray();
+//        System.out.println(maxSubArray.maxSubArray(new int[] {-2,1,-3,4,-1,2,1,-5,4}));
+//    }
 
 //    static void debugClimbStairs() {
 //        org.wsy.leetcode.dp.ClimbStairs climbStairs = new org.wsy.leetcode.dp.ClimbStairs();
