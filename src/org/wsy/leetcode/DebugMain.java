@@ -3,7 +3,8 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugHammingWeight();
+//        debugHammingWeight();
+        System.out.println("0 ^ 0= "+(0 ^ 0));
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
