@@ -3,14 +3,19 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugRob();
+        debugHammingWeight();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugRob() {
-        org.wsy.leetcode.dp.Rob rob = new org.wsy.leetcode.dp.Rob();
-        System.out.println(rob.rob(new int[] {1,2,3,1}));
+    static void debugHammingWeight() {
+        org.wsy.leetcode.other.HammingWeight hammingWeight = new org.wsy.leetcode.other.HammingWeight();
+        System.out.println(hammingWeight.hammingWeight(  4294967295l));
     }
+
+//    static void debugRob() {
+//        org.wsy.leetcode.dp.Rob rob = new org.wsy.leetcode.dp.Rob();
+//        System.out.println(rob.rob(new int[] {1,2,3,1}));
+//    }
 
 //    static void debugMaxSubArray() {
 //        org.wsy.leetcode.dp.MaxSubArray maxSubArray = new org.wsy.leetcode.dp.MaxSubArray();
