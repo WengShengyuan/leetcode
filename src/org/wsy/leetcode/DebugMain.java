@@ -3,15 +3,19 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-//        debugHammingWeight();
-        System.out.println("0 ^ 0= "+(0 ^ 0));
+        debugPascTriangle();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugHammingWeight() {
-        org.wsy.leetcode.other.HammingWeight hammingWeight = new org.wsy.leetcode.other.HammingWeight();
-        System.out.println(hammingWeight.hammingWeight(  4294967295l));
+    static void debugPascTriangle() {
+        org.wsy.leetcode.other.PascTriangle pascTriangle = new org.wsy.leetcode.other.PascTriangle();
+        pascTriangle.generate(5);
     }
+
+//    static void debugHammingWeight() {
+//        org.wsy.leetcode.other.HammingWeight hammingWeight = new org.wsy.leetcode.other.HammingWeight();
+//        System.out.println(hammingWeight.hammingWeight(  4294967295l));
+//    }
 
 //    static void debugRob() {
 //        org.wsy.leetcode.dp.Rob rob = new org.wsy.leetcode.dp.Rob();
