@@ -3,14 +3,19 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugPascTriangle();
+        debugMissingNumber();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugPascTriangle() {
-        org.wsy.leetcode.other.PascTriangle pascTriangle = new org.wsy.leetcode.other.PascTriangle();
-        pascTriangle.generate(5);
+    static void debugMissingNumber() {
+        org.wsy.leetcode.other.MissingNumber missingNumber = new org.wsy.leetcode.other.MissingNumber();
+        missingNumber.missingNumber(new int[] {3,0,1});
     }
+
+//    static void debugPascTriangle() {
+//        org.wsy.leetcode.other.PascTriangle pascTriangle = new org.wsy.leetcode.other.PascTriangle();
+//        pascTriangle.generate(5);
+//    }
 
 //    static void debugHammingWeight() {
 //        org.wsy.leetcode.other.HammingWeight hammingWeight = new org.wsy.leetcode.other.HammingWeight();
