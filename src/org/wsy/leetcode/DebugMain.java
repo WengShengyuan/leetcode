@@ -3,14 +3,15 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugMissingNumber();
+        debugThreeSum();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugMissingNumber() {
-        org.wsy.leetcode.other.MissingNumber missingNumber = new org.wsy.leetcode.other.MissingNumber();
-        missingNumber.missingNumber(new int[] {3,0,1});
+    static void debugThreeSum() {
+        org.wsy.leetcode.array.ThreeSum threeSum = new org.wsy.leetcode.array.ThreeSum();
+        threeSum.threeSum(new int[]{-2,0,0,2,2});
     }
+
 
 //    static void debugPascTriangle() {
 //        org.wsy.leetcode.other.PascTriangle pascTriangle = new org.wsy.leetcode.other.PascTriangle();
