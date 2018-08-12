@@ -3,18 +3,23 @@ package org.wsy.leetcode;
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugSetZeros();
+        debugGroupAnagrams();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugSetZeros() {
-        org.wsy.leetcode.array.SetZeros setZeros = new org.wsy.leetcode.array.SetZeros();
-        setZeros.setZeroes(new int[][] {
-                {0,1,2,0},
-                {3,4,5,3},
-                {1,3,1,5}
-        });
+    static void debugGroupAnagrams() {
+        org.wsy.leetcode.array.GroupAnagrams groupAnagrams = new org.wsy.leetcode.array.GroupAnagrams();
+        groupAnagrams.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
     }
+
+//    static void debugSetZeros() {
+//        org.wsy.leetcode.array.SetZeros setZeros = new org.wsy.leetcode.array.SetZeros();
+//        setZeros.setZeroes(new int[][] {
+//                {0,1,2,0},
+//                {3,4,5,3},
+//                {1,3,1,5}
+//        });
+//    }
 
 //    static void debugThreeSum() {
 //        org.wsy.leetcode.array.ThreeSum threeSum = new org.wsy.leetcode.array.ThreeSum();
