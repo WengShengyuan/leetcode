@@ -1,16 +1,50 @@
 package org.wsy.leetcode;
 
+import org.wsy.leetcode.list.ListNode;
+import org.wsy.leetcode.list.NodeFactory;
+
 public class DebugMain {
     public static void main(String[] args) {
         long current = System.currentTimeMillis();
-        debugGroupAnagrams();
+        debugTitleToNumber();
         System.out.println("执行时间: " + (System.currentTimeMillis() - current) + " ms");
     }
 
-    static void debugGroupAnagrams() {
-        org.wsy.leetcode.array.GroupAnagrams groupAnagrams = new org.wsy.leetcode.array.GroupAnagrams();
-        groupAnagrams.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
+    static void debugTitleToNumber() {
+        org.wsy.leetcode.math.TitleToNumber titleToNumber = new org.wsy.leetcode.math.TitleToNumber();
+        System.out.println(titleToNumber.titleToNumber("AB"));
     }
+
+//    static void debugIsHappy() {
+//        org.wsy.leetcode.math.IsHappy isHappy = new org.wsy.leetcode.math.IsHappy();
+//        System.out.println(isHappy.isHappy(19));
+//    }
+
+//    static void debugGetIntersectionListNode() {
+//        org.wsy.leetcode.list.GetIntersectionNode getIntersectionNode = new org.wsy.leetcode.list.GetIntersectionNode();
+//        ListNode headA = NodeFactory.build(new int[]{1,2,3,4,5});
+//        ListNode headB = NodeFactory.build(new int[]{1,2,3});
+//        headB.next.next.next = headA.next.next;
+//        System.out.println(headB);
+//        System.out.println(getIntersectionNode.getIntersectionNode(
+//            headA,headB
+//        ));
+//    }
+
+//    static void debugOddEvenList() {
+//        org.wsy.leetcode.list.OddEvenList oddEvenList = new org.wsy.leetcode.list.OddEvenList();
+//        System.out.println(oddEvenList.oddEvenList(NodeFactory.build(new int[]{1,2,3,4,5})));
+//    }
+
+//    static void debugAddTwoNumbers() {
+//        org.wsy.leetcode.list.AddTwoNumbers addTwoNumbers = new org.wsy.leetcode.list.AddTwoNumbers();
+//        System.out.println(addTwoNumbers.addTwoNumbers(NodeFactory.build(new int[]{5}), NodeFactory.build(new int[]{5})));
+//    }
+
+//    static void debugGroupAnagrams() {
+//        org.wsy.leetcode.array.GroupAnagrams groupAnagrams = new org.wsy.leetcode.array.GroupAnagrams();
+//        groupAnagrams.groupAnagrams(new String[] {"eat","tea","tan","ate","nat","bat"});
+//    }
 
 //    static void debugSetZeros() {
 //        org.wsy.leetcode.array.SetZeros setZeros = new org.wsy.leetcode.array.SetZeros();

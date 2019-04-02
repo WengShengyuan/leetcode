@@ -23,6 +23,8 @@ public class LengthOfLongestSubstring {
 
         int max = 0, temp = 0;
 
+
+
         for (int i = 0; i < s.length(); i++) {
 
             if (!pos.containsKey(ss[i])) {
